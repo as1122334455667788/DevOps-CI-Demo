@@ -1,0 +1,6 @@
+import app
+
+def test_output(capsys):
+    app.main()
+    captured = capsys.readouterr()
+    assert "Hello CI" in captured.out
